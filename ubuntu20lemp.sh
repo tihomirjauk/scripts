@@ -20,8 +20,6 @@ sudo apt-get install php7.4-cli php7.4-mbstring php7.4-dom --yes
 
 # composer
 curl -sS https://getcomposer.org/installer -o composer-setup.php
-php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 
-'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
 sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 
 # python
