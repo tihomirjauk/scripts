@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# append aliases to user profile
+cat aliases.sh &>> ~/.profile
+
+# switch to home folder
 cd ~
 
 sudo apt-get update
@@ -25,4 +29,3 @@ sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
 # python
 sudo apt-get install python3
 sudo apt-get install python3-pip --yes
-
